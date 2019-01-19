@@ -1,0 +1,34 @@
+{
+    "name": "asvae/laravel-api-tester",
+    "description": "Api tester for Laravel Framework",
+    "keywords": ["laravel", "api", "debug"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yauheni Prakopchyk",
+            "email": "ontrew@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "laravel/framework": "5.2.*",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "^0.9.5"
+    },
+    "suggest": {
+        "ktamas77/firebase-php": "Keep your requests stored in cloud",
+        "firebase/token-generator": "Token generator for firebase"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Asvae\\ApiTester\\": "src/"
+        }
+    }
+}
